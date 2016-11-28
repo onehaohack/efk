@@ -51,6 +51,5 @@ bin/plugin install marvel-agent
 If you use docker-toolbox, localhost is docker-machine ip.
 
 
-sudo docker run -d --name log_agent  -p 24224:24224 -v /home/admin:/var/log -v /home/admin:/home/admin  reg.docker.alibaba-inc.com/onehao/td-agent:alic1v1.0 
+sudo docker run -d --name log_agent  -p 24224:24224 -v /home/admin:/var/log -v /home/admin:/home/admin  teragrid/td-agent 
 
-reg address http://docker.alibaba-inc.com/#/containerDetail/onehao/td-agent/45802
