@@ -1,0 +1,4 @@
+FROM reg.docker.alibaba-inc.com/onehao/td-agent:alic1v1.0
+
+ADD td-agent.conf /etc/td-agent/td-agent.conf
+

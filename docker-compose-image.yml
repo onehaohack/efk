@@ -1,0 +1,13 @@
+elasticsearch:
+  image: reg.docker.alibaba-inc.com/onehao/elasticsearch:2.4.0
+  command: elasticsearch -Des.network.host=0.0.0.0
+  ports:
+    - 9200:9200
+kibana:
+  image: reg.docker.alibaba-inc.com/onehao/kibana:4.6.0
+  volumes:
+    - ./kibana/config/kibana.yml:/opt/kibana/config/kibana.yml
+  ports:
+    - 5601:5601
+  links:
+    - elasticsearch
